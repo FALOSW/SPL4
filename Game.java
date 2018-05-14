@@ -39,7 +39,7 @@ public class Game {
 				mineField[z][s] = "[ ]";
 			}
 		}
-		if (minen) {
+		if (minen == true) {
 			mineField[0][1] = "[x]";
 			mineField[(zeilen - 1)][0] = "[x]";
 			mineField[(spalten - 1)][2] = "[x]";
@@ -61,5 +61,7 @@ public class Game {
 	public static int eingabe(String hinweis) {
 		String eingabe = JOptionPane.showInputDialog(hinweis);
 		return Integer.parseInt(eingabe);
+
 	}
+
 }
